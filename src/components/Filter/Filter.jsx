@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { setFilter } from 'redux/filterSlice';
+import { setFilter } from 'redux/filter/filterSlice';
 import { BsFillSearchHeartFill } from 'react-icons/bs';
 import css from './Filter.module.css';
-import { selectFilter } from 'redux/selectors';
+import { selectFilter } from 'redux/filter/selectors';
 
 export const Filter = () => {
   const dispatch = useDispatch();
