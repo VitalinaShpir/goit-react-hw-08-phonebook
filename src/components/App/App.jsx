@@ -7,6 +7,8 @@ import { RestrictedRoute } from 'components/RestrictedRoute';
 import { refreshUser } from 'redux/auth/operations';
 import { useAuth } from 'useAuth';
 import { MainContainer } from './App.styled';
+import { ToastContainer } from 'react-toastify';
+
 
 const HomePage = lazy(() => import('pages/Home/HomePage'));
 const Contacts = lazy(() => import('pages/Contacts/Contacts'));
@@ -25,6 +27,7 @@ export const App = () => {
     <p>Refreshing user...</p>
   ) : (
     <MainContainer>
+      <ToastContainer />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />

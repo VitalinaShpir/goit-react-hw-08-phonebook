@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { Helmet } from 'react-helmet';
 import { useDispatch } from 'react-redux';
 import { ContactForm } from 'components/ContactForm/ContactForm';
 import { ContactList } from 'components/ContactList/ContactList';
@@ -7,10 +6,9 @@ import { fetchContacts } from 'redux/contacts/operations';
 import { Filter } from 'components/Filter/Filter';
 import {
   ContactsContainer,
-  ContactsTitle,
-  FilterTitle,
   MainTitle,
   MainContainer,
+  ContactsTitle
 } from './Contacts.styled';
 
 export default function Contacts() {
@@ -22,16 +20,12 @@ export default function Contacts() {
 
   return (
     <>
-      <Helmet>
-        <title>Your Contacts</title>
-      </Helmet>
-
+    
       <MainContainer>
         <MainTitle>Phonebook</MainTitle>
         <ContactForm />
-        <ContactsTitle>Contacts</ContactsTitle>
         <ContactsContainer>
-          <FilterTitle>Find contacts by name</FilterTitle>
+        <ContactsTitle>Contacts</ContactsTitle>
           <Filter />
           <ContactList />
         </ContactsContainer>

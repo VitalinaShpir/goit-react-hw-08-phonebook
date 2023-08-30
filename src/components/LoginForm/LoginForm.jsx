@@ -48,7 +48,7 @@ export const LoginForm = () => {
         </Label>
         <Button type="submit" disabled={determineLogInBtn}>
           {determineLogInBtn && <Loader />}
-          Log In
+          LogIn
         </Button>
       </StyledForm>
     </Formik>

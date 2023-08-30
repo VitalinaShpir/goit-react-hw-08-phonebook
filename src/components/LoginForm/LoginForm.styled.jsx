@@ -32,34 +32,28 @@ export const Input = styled(Field)`
 `;
 
 export const Button = styled.button`
-  padding: 5px 10px;
-  font-family: inherit;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 5px;
+width: 150px;
+height: 40px;
+padding: 5px 20px;
+align-items: center;
+margin: 0 auto;
+font-size: 18px;
+font-weight: 600;
+display: flex;
+justify-content: center;
+align-items: center;
+column-gap: 5px;
+color: white;
+background-color: transparent;
+border: 1px solid transparent;
+border-radius: 5px;
+box-shadow: inset 0 5px 15px 4px rgba(0, 0, 0, 0.2);
+transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  min-width: 140px;
-  min-height: 30px;
-  margin: 0;
-
-  background-color: white;
-  border: 2px black solid;
-  border-radius: 5px;
-  cursor: pointer;
-
-  font-size: 16px;
-  font-family: inherit;
-
-  transition: color 250ms cubic-bezier(0.65, 0.05, 0.36, 1),
-    background-color 250ms cubic-bezier(0.65, 0.05, 0.36, 1),
-    border-color 250ms cubic-bezier(0.65, 0.05, 0.36, 1);
-
-  &:hover {
-    color: white;
-    background-color: black;
-    border-color: white;
-  }
+&:hover {
+  border: 1px solid rgba(191, 0, 244, 0.2);
+  box-shadow: inset 0 5px 10px 4px rgba(191, 0, 244, 0.2);
+}
 `;
 
 export const StyledError = styled(ErrorMessage)`
