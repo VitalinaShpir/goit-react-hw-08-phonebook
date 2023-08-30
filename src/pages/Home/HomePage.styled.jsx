@@ -22,6 +22,7 @@ export const UserText = styled.h2`
   text-shadow: 6px 3px #9c2ebd72;
   color: white;
   display: flex;
+  gap: 5px;
   align-items: center;
 `;
 

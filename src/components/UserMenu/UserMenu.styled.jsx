@@ -11,6 +11,7 @@ export const UserText = styled.p`
   font-weight: 700;
   color: white;
   display: flex;
+  gap: 5px;
   align-items: center;
   gap: 3px;
 `;
