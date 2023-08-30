@@ -13,7 +13,7 @@ export const UserMenu = () => {
     <Container>
       <UserText>
         <FaUserCircle/>
-        Welcome, <AccentText>{user.name}</AccentText>
+        Welcome,  <AccentText>{user.name}</AccentText>
       </UserText>
       <Button type="button" onClick={() => dispatch(logOut())}>
         LogOut
